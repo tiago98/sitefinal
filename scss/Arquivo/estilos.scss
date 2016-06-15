@@ -1,0 +1,753 @@
+/*Atributos gerais da página*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*background tamanho*/
+
+.background {
+    width: 100%;
+    height: 100%;
+}
+
+/*Estilos gerais*/
+
+.sem-padding {
+    padding: 0 !important;
+}
+
+.sem-marcador {
+    margin: 0 !important;
+}
+
+h1 {
+    font-weight: 500;
+    margin: 1px 0 10px 0;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+}
+
+ul.inline li, ol.inline li {
+    display: inline;
+    margin-right: 15px;
+}
+
+ul.inline li:last-child, ol.inline li:last-child {
+    margin-right: 0;
+}
+
+ul.sem-marcador, ol.sem.marcador {
+    list-style: none;
+}
+
+a.botao, input.botao {
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px 0;
+    display: inline-block;
+    border: none;
+}
+
+a.botao:hover, input.botao:hover {
+    text-decoration: none;
+}
+
+a {
+    &:link, &:active, &:visited {
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Cores*/
+/*Texto*/
+
+.color-branco {
+    color: #ffffff;
+}
+
+.color-preto {
+    color: #000000;
+}
+
+.color-azul-claro {
+    color: #314559;
+}
+
+.color-vermelho-claro {
+    color: #d34346;
+}
+
+/*background*/
+
+.background-branco {
+    background: #ffffff;
+}
+
+.background-vermelho-claro {
+    background: #d34346;
+}
+
+.background-vermelho-escuro {
+    background: #c52d2f;
+}
+
+.background-menu-ative-option, .menu li a:hover {
+    background: #bb2225;
+}
+
+.background-azul-claro {
+    background: #314559;
+}
+
+.background-azul-escuro {
+    background: #1f3c58;
+}
+
+.background-azul-muito-escuro {
+    background: #172635;
+}
+
+.background-cinza-claro {
+    background: #f7f7f7;
+}
+
+.background-cinza {
+    background: #c8c8d8;
+}
+
+.background-cinza-escuro {
+    background: #efefef;
+}
+
+/*Bordas*/
+
+.borda-esquerda-azul-escuro {
+    border-left: 7px solid #172635;
+}
+
+.borda-esquerda-vermelho-escuro {
+    border-left: 7px solid #c52d2f;
+}
+
+.borda-topo-cinza-escuro {
+    border-top: 3px solid #efefef;
+}
+
+.borda-esquerda-cinza-escuro {
+    border-left: 15px solid #efefef;
+}
+
+.borda-header {
+    border-bottom: 5px solid #bb2225;
+}
+
+/*Cadeçalho (logo e menu)*/
+
+h1.logo {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.menu {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+
+    li a {
+        padding: 25px 10px 25px 10px;
+        border-radius: 3px;
+        font-weight: bold;
+        line-height: 24px;
+
+        &:hover {
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+.img_menu li img {
+    max-width: 15%;
+    display: inline;
+}
+
+ul, menu {
+    -webkit-padding-start: 10px;
+}
+
+/*carrosel*/
+
+.carrosel {
+    background-image: url(../img/slider.png);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+
+    .mi-left {
+        position: absolute;
+        left: 0;
+        padding: 8px;
+        top: 250px;
+    }
+
+    .mi-right {
+        position: absolute;
+        right: 0;
+        padding: 8px;
+        top: 250px;
+    }
+}
+
+.carrosel_txt {
+    position: relative;
+    top: 220px;
+}
+
+.txt_carrosel {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Barras de titulo*/
+
+.divisoria-about-us h3, .divisoria-team h3, .divisoria-planos h3, .divisoria_contacts {
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.divisoria_services {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/*valores*/
+
+span {
+    &.fa-road::before {
+        content: "\f018";
+        font-family: FontAwesome;
+        font-size: 25px;
+        position: absolute;
+    }
+
+    &.fa-leaf::before {
+        content: "\f06c";
+        font-family: FontAwesome;
+        padding-right: 3px;
+        padding-left: 10px;
+        font-size: 25px;
+        position: absolute;
+    }
+
+    &.fa-home::before {
+        content: "\f015";
+        font-family: FontAwesome;
+        padding-right: 3px;
+        padding-left: 10px;
+        font-size: 25px;
+        position: absolute;
+    }
+
+    &.fa-users::before {
+        content: "\f0c0";
+        font-family: FontAwesome;
+        padding-right: 3px;
+        padding-left: 10px;
+        font-size: 22px;
+        position: absolute;
+    }
+}
+
+.conteudo {
+    padding-left: 50px;
+}
+
+p.conteudo {
+    font-size: 13px;
+}
+
+.icons {
+    padding-left: 10px;
+}
+
+.valores {
+    p, h3 {
+        margin-left: 0;
+        margin-top: -5px;
+        padding-right: 20px;
+    }
+}
+
+/*Sobre nós*/
+
+.seta {
+    font-weight: bold;
+}
+
+.bar-sobre-nos {
+    .mi-left {
+        position: relative;
+        left: 110px;
+        top: 0;
+    }
+
+    .mi-right {
+        position: relative;
+        float: right;
+        top: 0;
+    }
+}
+
+/*Team*/
+
+.divisoria-team {
+    .mi-left {
+        position: relative;
+        float: right;
+        top: 0;
+        margin-left: 10px;
+    }
+
+    .mi-right {
+        position: relative;
+        float: right;
+        top: 0;
+        margin-left: 5px;
+    }
+}
+
+.team_name {
+    text-align: center;
+}
+
+.margem {
+    margin-left: -15px;
+}
+
+.margem-externa {
+    margin-left: 5px;
+}
+
+.team_description {
+    margin-top: -10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.team_img {
+    padding: 5px;
+    width: 215px;
+    height: 215px;
+}
+
+/*Serviços*/
+
+.services_bar img {
+    width: 200px;
+    height: 200px;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.services-caixa {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fa-comments, .fa-table, .fa-cog, .fa-flask, .fa-bar-chart, .fa-plane {
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.services-bar p {
+    font-size: 12px;
+}
+
+/*Serviços tabulador*/
+
+.tab {
+    position: relative;
+    top: 10px;
+    width: 86px;
+    height: 20px;
+    padding: 10px;
+}
+
+.tab_msg {
+    position: relative;
+    top: 4px;
+    padding: 20px;
+    width: 100% (-20px);
+    height: auto;
+}
+
+.caixa-tabulador {
+    padding-right: 20px;
+    margin-bottom: 60px;
+}
+
+/*Serviços gráfico*/
+
+.blue {
+    width: 35%;
+    height: auto;
+    padding: 8px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.red {
+    height: auto;
+    padding: 8px;
+    display: inline-block;
+    margin-left: -3.5px;
+}
+
+.bar_background {
+    height: 35px;
+    float: right;
+    display: inline-block;
+    margin-left: -3.5px;
+}
+
+.grafic_bar {
+    margin-bottom: 12px;
+}
+
+.grafic_bar_description_1 {
+    font-size: 14px;
+}
+
+.grafic_title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/*Planos*/
+
+.divisoria_prices {
+    margin-bottom: 35px;
+}
+
+.title {
+    height: auto;
+    padding: 8px;
+    display: block;
+}
+
+.button, .button-first {
+    width: 220px;
+    height: auto;
+    padding: 8px;
+    display: block;
+    border: none;
+    margin-left: 20px;
+}
+
+span.caracteristica::before {
+    content: "\f046";
+    font-family: FontAwesome;
+    padding-right: 3px;
+}
+
+.plano-caixa {
+    height: 280px;
+    margin-left: 20px;
+}
+
+.margem-plano-first {
+    margin-left: -20px;
+}
+
+.margem-plano {
+    margin-left: 6.67px;
+}
+
+.plano-caixa-first {
+    height: 280px;
+    margin-left: 20px;
+}
+
+.plano-conteudo {
+    .plano {
+        font-size: 14px;
+    }
+
+    .atribute {
+        height: auto;
+        padding: 8px;
+        padding-left: 20px;
+        display: block;
+    }
+
+    .preco {
+        font-size: 24px;
+    }
+
+    .caracteristica {
+        font-size: 16px;
+    }
+}
+
+/*Newsletter aria*/
+
+.newsletter_fild {
+    margin-top: 45px;
+    font-size: 39px;
+    width: 290px;
+    border: 1px solid #E6E6E6;
+}
+
+.button_newsletter {
+    float: right;
+    height: 51px;
+    margin-top: 44.5px;
+    margin-right: 24.5px;
+    border: none;
+}
+
+.contacts_bar_col1 {
+    padding: 40px 10px 10px 40px;
+}
+
+.contacts_bar_col {
+    padding-left: 15px;
+}
+
+.button_l1 {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.button_l2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.col12_contacts_bar {
+    margin-top: 50px;
+    height: 140px;
+}
+
+/*contactos*/
+
+.img {
+    background-image: url(../img/map.png);
+    width: 100%;
+    height: 500px;
+}
+
+/*About us, team*/
+
+.bar-sobre-nos .background_bar-sobre-nos_col3, .services_bar {
+    padding: 20px;
+}
+
+/*contato form aria*/
+
+.address {
+    margin-bottom: 30px;
+}
+
+.img_menu1 li img {
+    max-width: 10%;
+    display: inline;
+}
+
+.contact_line {
+    font-size: 13px;
+}
+
+.contato-aria-texto-input {
+    label {
+        display: block;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    input, textarea {
+        display: block;
+        margin-bottom: 13px;
+        padding: 5px 0;
+        border: none;
+        padding-left: 10px;
+        border: 0.5px solid #E6E6E6;
+    }
+}
+
+.margem-contacto {
+    margin-right: 40px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.contato-aria-texto-input {
+    textarea {
+        height: 150px;
+        width: 100%;
+    }
+
+    input.botao {
+        width: 102.5%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+    }
+}
+
+.form_margin-bottom {
+    margin-bottom: 30px;
+}
+
+/*Icons redes sociais baixo*/
+
+.icon-rs {
+    padding: 5px 8px 5px 8px;
+    width: 20px;
+    height: 20px;
+}
+
+/*Footer*/
+
+.footer {
+    padding-bottom: 10px;
+    padding-top: 12px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.footer-margin {
+    margin-right: 30px;
+}
+
+.footer_right, .divisoria-about-us_right {
+    float: right;
+}
+
+.footer_left {
+    float: left;
+}
+
+/********************************************/
+/*Linhas e respetivas variações*/
+
+.linha_NP {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.linha {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.linha_MP {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+    padding-bottom: 40px;
+}
+
+.linha_MP_top_bottom {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/*Colunas*/
+
+.coluna {
+    float: left;
+}
+
+/*Dimensões de coluna*/
+
+.col1 {
+    width: 80px;
+}
+
+.col2 {
+    width: 160px;
+}
+
+.col3 {
+    width: 240px;
+}
+
+.col4 {
+    width: 320px;
+}
+
+.col5 {
+    width: 400px;
+}
+
+.col6 {
+    width: 480px;
+}
+
+.col7 {
+    width: 560px;
+}
+
+.col8 {
+    width: 640px;
+}
+
+.col9 {
+    width: 720px;
+}
+
+.col10 {
+    width: 800px;
+}
+
+.col11 {
+    width: 880px;
+}
+
+.col12 {
+    width: 960px;
+}
